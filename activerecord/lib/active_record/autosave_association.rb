@@ -279,7 +279,7 @@ module ActiveRecord
         if new_record || autosave
           association && association.target
         else
-          association.target.find_all(&:new_record?)
+          association.target.find_all
         end
       end
 
